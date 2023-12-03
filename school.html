@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+  html,
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
+
+  .container {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 777px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .box-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8%;
+    height: 23%;
+    background-color: #EFF8ED;
+    z-index: -9999;
+
+  }
+
+  .container .box-right {
+    position: absolute;
+    width: 42%;
+    height: 90%;
+    margin-left: 835.86px;
+    background-color: #EFF8ED;
+    z-index: -9999;
+  }
+
+  header {
+    /* border: 1px solid red; */
+    width: 92%;
+  }
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .navbar .brandname {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-left: 200px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #252B42;
+
+  }
+
+  .navbar .navbar-links ul {
+    list-style-type: none;
+  }
+
+  .navbar .navbar-links li {
+    display: inline-block;
+    padding-left: 21px;
+
+
+  }
+
+  .navbar .navbar-links a {
+    color: #737373;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #737373;
+
+
+
+  }
+
+  .navbar .user-meno .login {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #96BB7C;
+    text-decoration: none;
+    padding-right: 45px;
+  }
+
+  .navbar .user-meno .join {
+    background-color: #96BB7C;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  footer {
+    /* border: 1px  solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer .left-box {
+    width: 40%;
+    height: 50%;
+    gap: 30px;
+    /* border: 1px solid yellow; */
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+
+
+  }
+
+  h1 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #252B42;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #737373;
+  }
+
+  footer .user-meno .Get {
+    background-color: #96BB7C;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  footer .user-meno .Learn {
+    border: 1px solid #96BB7C;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #96BB7C;
+  }
+
+  footer .right-box {
+    /* border: 1px solid yellow; */
+    width: 49%;
+    position: relative;
+  }
+
+  .circal {
+    width: 460.92px;
+    height: 460.92px;
+    top: 8%;
+    left: 25%;
+    border-radius: 9999px;
+    background-color: #AAEAD0;
+    position: absolute;
+  }
+
+  .box1 {
+    padding: 15px 16px;
+    border-radius: 8.11px;
+
+    position: absolute;
+    background: #0072F9;
+  }
+
+  .box2 {
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 53%;
+    background: #0072F9;
+    padding: 15px 16px;
+    border-radius: 8.11px;
+  }
+
+  .box3 {
+    width: 25%;
+    height: 26%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 11%;
+  }
+
+  .sidbar {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidbar .box-top {
+    /* border: 1px solid yellow; */
+    width: 48%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14%;
+    margin-left: 7%;
+  }
+
+  h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #96BB7C;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #96BB7C;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #737373;
+  }
+
+  .sidbar .box-boutton {
+    display: grid;
+    grid-template-columns: 17% 18% 17% 18%;
+    gap: 30px;
+    padding-top: 14%;
+    padding-bottom: 14%;
+    padding-left: 7%;
+  }
+
+  .sidbar .box-boutton>div {
+    box-shadow: 0px 13px 19px 0px #00000012;
+    text-align: left;
+    background-color: #ffffff;
+  }
+
+  .sidbar .box-boutton>div:hover {
+    background: #96BB7C;
+    color: #ffffff;
+  }
+
+  .box4 {
+    width: 21%;
+    background: #E74040;
+    border: 1px solid #E74040;
+  }
+
+  .asiddbar {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .asiddbar .left {
+    width: 35%;
+    position: relative;
+    /* border: 1px solid yellow; */
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-top: 17%;
+  }
+
+  .asiddbar .right {
+    width: 26%;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .circal1 {
+    position: absolute;
+    width: 10.25px;
+    height: 10.25px;
+    border-radius: 9999px;
+    /* background: #FB762B; */
+    margin-top: 40%;
+    margin-left: 16%;
+  }
+
+  .circal2 {
+    width: 311px;
+    height: 311px;
+    border-radius: 9999px;
+    margin-top: 15%;
+    margin-left: 20%;
+    position: absolute;
+    background: #DDF4FF;
+    z-index: -9999;
+  }
+
+  .box5 {
+    width: 25%;
+    background-color: #E74040;
+    border: 2.5px solid #E74040;
+  }
+
+  .video {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .leftvideo {
+    /* border: 1px solid blue; */
+    width: 35%;
+    margin-top: 12%;
+    margin-left: 7%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+    gap: 35px;
+  }
+
+  .connet {
+    width: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .connet .lbox {
+    /* border: 1px solid red; */
+    flex-direction: column;
+    width: 68%;
+    gap: 10px;
+    margin-top: 10%;
+    margin-left: 7%;
+    margin-bottom: 10%;
+  }
+
+  .connet .bbox {
+    width: 73%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    margin-left: 7%;
+  }
+
+  .box6 {
+    /* border: 1px solid darkmagenta; */
+    width: 24%;
+    height: 300px;
+    position: relative;
+  }
+
+  .tag {
+    width: 13%;
+    height: 8%;
+    margin-top: 2%;
+    margin-left: 8%;
+    padding: 0px 10px;
+    border-radius: 3px;
+    background: #E74040;
+    box-shadow: 0px 2px 4px 0px #0000001A;
+    position: absolute;
+  }
+
+  .circal3 {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 44.79px;
+    background: #ffffff;
+    position: absolute;
+    margin-top: 100%;
+    align-items: center;
+  }
+
+  .color1 {
+    color: #BDBDBD;
+  }
+
+  .color2 {
+    color: #FFAB71;
+  }
+
+  .circal4 {
+    width: 50px;
+    height: 26px;
+    border-radius: 20px;
+    padding: 2px;
+    background: #2D4059;
+  }
+
+  .box7 {
+    display: flex;
+    /* border: 1px solid red; */
+  }
+
+  text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .connet .cbox {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    width: 73%;
+    margin-left: 7%;
+    margin-bottom: 10%;
+  }
+
+  .box8 {
+    /* border: 1px solid darkmagenta; */
+    width: 22%;
+    flex-direction: column;
+    padding-left: 25px;
+    gap: 10px;
+  }
+
+  .layout {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout .tobox {
+    /* border: 1px solid red; */
+    width: 48%;
+    margin-left: 7%;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    gap: 10px;
+  }
+
+  .layout .btbox {
+    /* border: 1px solid red; */
+    width: 71%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 30px;
+    box-shadow: 0px 13px 19px 0px #00000012;
+    background-color: #ffffff;
+    margin-left: 7%;
+    margin-bottom: 15%;
+    margin-right: 25%;
+  }
+
+  .layout .btbox>div {
+    /* border: 1px solid red; */
+    align-items: center;
+    text-align: center;
+  }
+
+  .layout .btbox>div:hover {
+    background: #2D4059;
+    color: #ffffff;
+  }
+
+  .circal5 {
+    width: 96px;
+    height: 96px;
+    border-radius: 200px;
+    background: #96BB7C;
+    margin-left: 42%;
+    margin-top: 15%;
+  }
+
+  .box9 {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 25%;
+    margin-left: 43%;
+  }
+
+  .box10 {
+    /* border: 1px solid #96BB7C; */
+    background: #96BB7C;
+    width: 50%;
+    border-radius: 5px;
+    padding: 15px 40px;
+    gap: 10px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 17%;
+    margin-bottom: 8%;
+  }
+
+  .box11 {
+    /* border: 1px solid red; */
+    width: 73%;
+    display: flex;
+    padding-bottom: 15px;
+    margin-left: 17%;
+  }
+
+  .circal6 {
+    width: 60px;
+    height: 35px;
+    top: -60px;
+    left: 279px;
+    padding: 29px 16px;
+    border-radius: 100px;
+    gap: 10px;
+    background: #E77C40;
+    position: absolute;
+  }
+
+  .pictur {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pictur .boxt {
+    /* border: 1px solid yellow; */
+    width: 48%;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+
+  .pictur .boxb {
+    /* border: 1px solid yellow; */
+    width: 73%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-top: 7%;
+    margin-bottom: 15%;
+  }
+
+  .box12 {
+    /* border: 1px solid red; */
+    width: 48%;
+    padding: 25px 25px 0 25px;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .emil {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #FFF2F3;
+    align-items: center;
+  }
+
+  .emil .tbox {
+    /* border: 1px solid black; */
+    width: 48%;
+    gap: 10px;
+    text-align: center;
+    margin-top: 8%;
+  }
+
+  .emil .bubox {
+    /* border: 1px solid red; */
+    width: 48%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  .link {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    align-items: center;
+  }
+
+  .linka {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #737373;
+    text-decoration: none;
+  }
+
+  .link .linkbox {
+    /* border: 1px solid red; */
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 7%;
+  }
+
+  .box13 {
+    /* border: 1px solid black; */
+    width: 14%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box14 {
+    /* border: 1px solid black; */
+    width: 31%;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 5%;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="box-left"></div>
+    <div class="box-right"></div>
+    <header>
+      <div class="navbar">
+        <h3 class="brandname">Medical Hardy</h3>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="user-meno">
+          <a class="login" href="login.html">login</a>
+          <a class="join" href="#">JOIN US &nbsp; <img src="img/icons/77.png"></a>
+        </div>
+    </header>
+    <footer>
+      <div class="left-box">
+        <h5 class="online">online</h5>
+        <h1>HIGH QUALITY COURSES </h1>
+        <h4 style="width: 75%;">Every day brings with it a fresh set of learning possibilities.</h4>
+        <div class="user-meno">
+          <a class="Get" href="#">Get Quote Now</a>
+          <a class="Learn" href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="circal"></div>
+        <img src="img/image 3 (3).png" style="position: absolute; margin-top: 10%; margin-left: 11%;">
+        <img src="img/image 4.png" style="position: absolute; margin-top: 10%; margin-left: 84%;">
+        <div class="box1" style=" margin-top: 42%;
+                margin-left: 6%;"><img src="img/icomoon-free_stats-dots.png"></div>
+        <img src="img/technology 2.png" style="position: absolute; margin-left: 13%;">
+        <img src="img/image 2 (2).png" style="position: absolute; margin-top: 55%; margin-left: 55%;">
+        <div class="box2"><img src="img/gridicons_stats.png"></div>
+        <img src="img/image 5.png" style="position: absolute; margin-top: 54%; margin-left: 10%;">
+    </footer>
+  </div>
+  <div class="sidbar">
+    <div class="box-top">
+      <h6>Practice Advice</h6>
+      <h2>Our Popular Courses</h2>
+      <p style="width: 50%;">Problems trying to resolve the conflict between
+        the two major realms of Classical physics: Newtonian mechanics </p>
+    </div>
+    <div class="box-boutton">
+      <div>
+        <a href="#"><img src="img/icons/icon cool-icon-l11.svg"></a>
+        <h5 style="color: #252B42;">training Courses</h5>
+        <div class="box4"></div>
+        <p style="width: 60%;">The gradual
+          accumulation of
+          information about </p>
+
+      </div>
+      <div>
+        <a href="#"><img src="img/icons/icon cool-icon-l5.svg"></a>
+        <h5 style="color: #252B42;">training Courses</h5>
+        <div class="box4"></div>
+        <p style="width: 60%;">The gradual
+          accumulation of
+          information about </p>
+      </div>
+      <div>
+        <a href="#"><img src="img/icons/icon cool-icon-l8.svg"></a>
+        <h5 style="color: #252B42;">training Courses</h5>
+        <div class="box4"></div>
+        <p style="width: 60%;">The gradual
+          accumulation of
+          information about </p>
+      </div>
+      <div>
+        <a href="#"><img src="img/icons/icon cool-icon-l2.png"></a>
+        <h5 style="color: #252B42;">training Courses</h5>
+        <div class="box4"></div>
+        <p style="width: 60%;">The gradual
+          accumulation of
+          information about </p>
+      </div>
+    </div>
+  </div>
+  <div class="asiddbar">
+    <div class="left">
+      <img src="img/image 3 (3).png" style="position: absolute; margin-top: 4%; margin-left: -0.9%;">
+      <div class="circal1"></div>
+      <div class="circal2"></div>
+      <img src="img/technology 1.png" style="position: absolute; margin-left: 18%;">
+      <div class="box1" style="margin-top: 50%; margin-left: 14%; transform: rotate(-60deg);"><img
+          src="img/icomoon-free_stats-dots.png"></div>
+      <img src="img/image 2.png" style="position: absolute; margin-top: 48%; margin-left: 48%;">
+      <img src="img/Group 326.png" style="position: absolute; margin-top: 30%; margin-left: 62%;">
+    </div>
+    <div class="right">
+      <div class="box5"></div>
+      <h2>Get Quality
+        Education</h2>
+      <p style="width: 90%;">Problems trying to resolve the conflict between
+        the two major realms of Classical physics:
+        Newtonian mechanics </p>
+      <a class="Learn" href="#" style="text-decoration: none; color: #96BB7C;">Learn More &nbsp;<img
+          src="img/icons/icon arrow-next.png"></a>
+    </div>
+  </div>
+  <div class="video">
+    <div class="leftvideo">
+      <div class="box5"></div>
+      <h2>Approdable Packages</h2>
+      <p style="width: 90%;">Problems trying to resolve the conflict between
+        the two major realms of Classical physics:
+        Newtonian mechanics </p>
+      <a class="Learn" href="#" style="text-decoration: none; color: #96BB7C;">Learn More &nbsp;<img
+          src="img/icons/icon arrow-next.png"></a>
+    </div>
+    <video width="36%" style="border-radius: 20px;width: 36%;height: 363px;margin-top:90px;margin-left: -8%;" controls>
+      <source src="2cc876cff49305a61c11194a72c067e423580082-144p.mp4" type="video/mp4">
+      <source src="2cc876cff49305a61c11194a72c067e423580082-144p.mp4" type="video/ogg">
+    </video>
+  </div>
+  <div class="connet">
+    <div class="lbox">
+      <h6>Courses</h6>
+      <h2>Most Popular Courses</h2>
+      <p style="width: 40%;">Problems trying to resolve the conflict between
+        the two major realms of Classical physics: Newtonian mechanics </p>
+    </div>
+    <div class="bbox">
+      <div class="box6">
+        <img src="img/product-cover-133 sec-.png" style="position: absolute;">
+        <div class="tag" style="margin-top: 10%;">
+          <h6 style="color: #ffffff;margin-top: 0;">sale</h6>
+        </div>
+        <div class="circal3" style="margin-left: 20%;"><img src="img/icons/23.png"></div>
+        <div class="circal3" style="margin-left: 40%;"><img src="img/icons/22.png"></div>
+        <div class="circal3" style="margin-left: 60%;"><img src="img/icons/Vector.png"></div>
+      </div>
+      <div class="box6" style="margin-left: 3%;">
+        <img src="img/product-cover-131.png" style="position: absolute;">
+        <div class="tag" style="margin-top: 10%;">
+          <h6 style="color: #ffffff; margin-top: 0;">sale</h6>
+        </div>
+        <div class="circal3" style="margin-left: 20%;"><img src="img/icons/23.png"></div>
+        <div class="circal3" style="margin-left: 40%;"><img src="img/icons/22.png"></div>
+        <div class="circal3" style="margin-left: 60%;"><img src="img/icons/00000.png"></div>
+      </div>
+      <div class="box6" style="margin-left: 3%;">
+        <img src="img/product-cover-130 sec-.png" style="position: absolute;">
+        <div class="tag" style="margin-top: 10%;">
+          <h6 style="color: #ffffff; margin-top: 0;">sale</h6>
+        </div>
+        <div class="circal3" style="margin-left: 20%;"><img src="img/icons/23.png"></div>
+        <div class="circal3" style="margin-left: 40%;"><img src="img/icons/22.png"></div>
+        <div class="circal3" style="margin-left: 60%;"><img src="img/icons/00000.png"></div>
+      </div>
+      <div class="box6" style="margin-left: 3%;">
+        <img src="img/product-cover-132 sec-.png" style="position: absolute;">
+        <div class="tag" style="margin-top: 10%;">
+          <h6 style="color: #ffffff; margin-top: 0;">sale</h6>
+        </div>
+        <div class="circal3" style="margin-left: 20%;"><img src="img/icons/23.png"></div>
+        <div class="circal3" style="margin-left: 40%;"><img src="img/icons/22.png"></div>
+        <div class="circal3" style="margin-left: 60%;"><img src="img/icons/00000.png"></div>
+      </div>
+    </div>
+    <div class="cbox">
+      <div class="box8">
+        <div class="box7" style="padding-top: 10px;">
+          <a href="#" style="text-decoration: none; font-size: 14px; color: #96BB7C; padding-right: 7%;">training
+            Courses</a>
+          <div class="circal4">
+            <img src="img/icons/Vector.png" alt="image" width="16" height="16"><text>4.9</text>
+          </div>
+        </div>
+        <h5 style="color: #252B42;">Video in Live Action</h5>
+        <p>We focus on ergonomics
+          and meeting you....</p>
+        <div class="box7" style="height: 10%;"><img src="c:\Users\User\Desktop\hamed3\New folder\Frame sec-.png"
+            alt="image" width="20" height="20">
+          <h6 style="color:#737373 ; margin-top: 0; padding-left: 4%;">15 Sales</h6>
+        </div>
+        <h5>
+          <span class="color1">$16.48</span>
+          <span class="color2">&nbsp;$6.48</span>
+        </h5>
+        <a class="Learn" href="#" style="text-decoration: none; color: #96BB7C; padding: 10px 20px 10px 20px; border-radius: 37px;
+               border: 1px solid #96BB7C;">Learn More &nbsp;<img src="img/icons/icon arrow-next.png">
+        </a>
+      </div>
+      <div class="box8" style="margin-left: 3%;">
+        <div class="box7" style="padding-top: 10px;">
+          <a href="#" style="text-decoration: none; font-size: 14px; color: #96BB7C; padding-right: 7%;">training
+            Courses</a>
+          <div class="circal4">
+            <img src="img/icons/Vector.png" alt="image" width="16" height="16"><text>4.9</text>
+          </div>
+        </div>
+        <h5 style="color: #252B42;">Most Popular Courses</h5>
+        <p>We focus on ergonomics
+          and meeting you....</p>
+        <div class="box7" style="height: 10%;"><img src="c:\Users\User\Desktop\hamed3\New folder\Frame sec-.png"
+            alt="image" width="20" height="20">
+          <h6 style="color:#737373 ; margin-top: 0; padding-left: 4%;">15 Sales</h6>
+        </div>
+        <h5>
+          <span class="color1">$16.48</span>
+          <span class="color2">&nbsp;$6.48</span>
+        </h5>
+        <a class="Learn" href="#" style="text-decoration: none; color: #96BB7C; padding: 10px 20px 10px 20px; border-radius: 37px;
+               border: 1px solid #96BB7C;">Learn More &nbsp;<img src="img/icons/icon arrow-next.png">
+        </a>
+      </div>
+      <div class="box8" style="margin-left: 3%;">
+        <div class="box7" style="padding-top: 10px;">
+          <a href="#" style="text-decoration: none; font-size: 14px; color: #96BB7C; padding-right: 7%;">2,769 online
+            courses </a>
+          <div class="circal4">
+            <img src="img/icons/Vector.png" alt="image" width="16" height="16"><text>4.9</text>
+          </div>
+        </div>
+        <h5 style="color: #252B42;">Our Experts Teacher</h5>
+        <p>We focus on ergonomics
+          and meeting you....</p>
+        <div class="box7" style="height: 10%;"><img src="c:\Users\User\Desktop\hamed3\New folder\Frame sec-.png"
+            alt="image" width="20" height="20">
+          <h6 style="color:#737373 ; margin-top: 0; padding-left: 4%;">15 Sales</h6>
+        </div>
+        <h5>
+          <span class="color1">$16.48</span>
+          <span class="color2">&nbsp;$6.48</span>
+        </h5>
+        <a class="Learn" href="#" style="text-decoration: none; color: #96BB7C; padding: 10px 20px 10px 20px; border-radius: 37px;
+               border: 1px solid #96BB7C;">Learn More &nbsp;<img src="img/icons/icon arrow-next.png">
+        </a>
+      </div>
+      <div class="box8" style="margin-left: 3%;">
+        <div class="box7" style="padding-top: 10px;">
+          <a href="#" style="text-decoration: none; font-size: 14px; color: #96BB7C; padding-right: 7%;">training
+            Courses</a>
+          <div class="circal4">
+            <img src="img/icons/Vector.png" alt="image" width="16" height="16"><text>4.9</text>
+          </div>
+        </div>
+        <h5 style="color: #252B42;">Every Client Matters</h5>
+        <p>We focus on ergonomics
+          and meeting you....</p>
+        <div class="box7" style="height: 10%;"><img src="c:\Users\User\Desktop\hamed3\New folder\Frame sec-.png"
+            alt="image" width="20" height="20">
+          <h6 style="color:#737373 ; margin-top: 0; padding-left: 4%;">15 Sales</h6>
+        </div>
+        <h5>
+          <span class="color1">$16.48</span>
+          <span class="color2">&nbsp;$6.48</span>
+        </h5>
+        <a class="Learn" href="#" style="text-decoration: none; color: #96BB7C; padding: 10px 20px 10px 20px; border-radius: 37px;
+               border: 1px solid #96BB7C;">Learn More &nbsp;<img src="img/icons/icon arrow-next.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="layout">
+    <div class="tobox">
+      <h6 style="margin-top: 0;">Practice Advice</h6>
+      <h2>Our Experts Teacher</h2>
+      <p style="width: 58%;">Problems trying to resolve the conflict between
+        the two major realms of Classical physics: Newtonian mechanics </p>
+    </div>
+    <div class="btbox">
+      <div>
+        <div class="circal5"><img src="img/icons/icon cool-icon-12.png" style="padding: 25%;"></div>
+        <h3 style="margin-left: 15%;">FREE</h3>
+        <h6 style="width: 43%; text-align: center; color: #737373; margin-left: 35%;">Organize across all
+          apps by hand
+        </h6>
+        <div class="box9">
+          <h2 style="color: #96BB7C; margin-bottom: 0; margin-top: 0;">19$</h2>
+          <h6 style="color: #8EC2F2; margin-top: 0; margin-bottom: 0;">Per Month</h6>
+        </div>
+        <p style="width: 58%; text-align: center; margin-left: 27%;">Slate helps you see how
+          many more days you need...
+        </p>
+        <div class="box10"><text>Try for free</text></div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">1GB Cloud storage
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Email and community
+            support
+          </h6>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div class="circal6">
+          <h3 style="color: #ffffff; text-align: center; margin-top: 0;">New</h3>
+        </div>
+        <div class="circal5"><img src="img/icons/icon cool-icon-12.png" style="padding: 25%;"></div>
+        <h3 style="margin-left: 15%;">FREE</h3>
+        <h6 style="width: 43%; text-align: center; color: #737373; margin-left: 35%;">Organize across all
+          apps by hand
+        </h6>
+        <div class="box9">
+          <h2 style="color: #96BB7C; margin-bottom: 0; margin-top: 0;">19$</h2>
+          <h6 style="color: #8EC2F2; margin-top: 0; margin-bottom: 0;">Per Month</h6>
+        </div>
+        <p style="width: 58%; text-align: center; margin-left: 27%;">Slate helps you see how
+          many more days you need...
+        </p>
+        <div class="box10"><text>Try for free</text></div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">1GB Cloud storage
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Email and community
+            support
+          </h6>
+        </div>
+      </div>
+      <div>
+        <div class="circal5"><img src="img/icons/icon cool-icon-12.png" style="padding: 25%;"></div>
+        <h3 style="margin-left: 15%;">FREE</h3>
+        <h6 style="width: 43%; text-align: center; color: #737373; margin-left: 35%;">Organize across all
+          apps by hand
+        </h6>
+        <div class="box9">
+          <h2 style="color: #96BB7C; margin-bottom: 0; margin-top: 0;">19$</h2>
+          <h6 style="color: #8EC2F2; margin-top: 0; margin-bottom: 0;">Per Month</h6>
+        </div>
+        <p style="width: 58%; text-align: center; margin-left: 27%;">Slate helps you see how
+          many more days you need...
+        </p>
+        <div class="box10"><text>Try for free</text></div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle1.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Unlimited product updates
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">1GB Cloud storage
+          </h6>
+        </div>
+        <div class="box11">
+          <img src="img/icons/circle.png" alt="image" width="25" height="25">&nbsp;<h6
+            style="margin-top: 0; color: #252B42;  margin-bottom: 0;">Email and community
+            support
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div class="pictur">
+      <div class="boxt">
+        <h6 style="margin-top: 0;">Testimonials</h6>
+        <h2>Video in Live Action</h2>
+        <p style="width: 60%;">Problems trying to resolve the conflict between
+          the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+      <div class="boxb">
+        <div class="box12">
+          <img src="img/testimonial-user-cover-1.png" style="border-radius: 200px;">
+          <p style="width: 60%; text-align:center; margin-left: 18%;">Slate helps you see how many more days
+            you need to work to reach your financial
+            goal for the month and year.</p>
+          <img src="img/stars sec-.png">
+          <div class="box7" style="width: 30%; flex-direction: column; align-items: center; margin-left: 35%;">
+            <h5 style="gap: 5; margin-bottom: 0; color: #252B42;">Regina Miles</h5>
+            <h6 style="margin-top: 0; color: #737373;">Designer</h6>
+          </div>
+        </div>
+        <div class="box12" style="margin-left: 4%;">
+          <img src="img/circle sec-.png">
+          <p style="width: 60%; text-align:center; margin-left: 18%;">Slate helps you see how many more days
+            you need to work to reach your financial
+            goal for the month and year.</p>
+          <img src="img/stars sec-.png">
+          <div class="box7" style="width: 30%; flex-direction: column; align-items: center; margin-left: 35%;">
+            <h5 style="gap: 5; margin-bottom: 0; color: #252B42;">Regina Miles</h5>
+            <h6 style="margin-top: 0; color: #737373;">Designer</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="emil">
+      <div class="tbox">
+        <h6 style="margin-top: 0; text-align: center;">Newsletter</h6>
+        <h2>Our Experts Teacher</h2>
+        <p style="width: 60%; text-align: center; align-items: center; margin-left: 20%;">Problems trying to resolve the
+          conflict between
+          the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+      <div class="bubox">
+        <form>
+
+          <input type="email" value="Your Email"
+            style="border: 1px solid #E6E6E6; width: 70%; padding: 15px; color: #E6E6E6; border-radius: 5px;background-color: #F9F9F9;"><input
+            type="submit" value="Subscribe" style="background: #96BB7C; color: #E6E6E6; width: 25%; border: 1px;
+        border-radius: 0px 5px 5px 0px; padding: 15px;">
+
+        </form>
+      </div>
+
+    </div>
+    <div class="link">
+      <div class="linkbox" style="margin-top: 5%;">
+        <div class="box13">
+          <h5 style="margin-top: 0; color: #252B42;">Company Info</h5>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">About Us</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Carrier</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">We are hiring</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Blog</div>
+          </a>
+        </div>
+        <div class="box13">
+          <h5 style="margin-top: 0; color: #252B42;">Legal</h5>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">About Us</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Carrier</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">We are hiring</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Blog</div>
+          </a>
+        </div>
+        <div class="box13">
+          <h5 style="margin-top: 0; color: #252B42;">Features</h5>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Business Marketing</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">User Analytic</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Live Chat</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Unlimited Support</div>
+          </a>
+        </div>
+        <div class="box13">
+          <h5 style="margin-top: 0; color: #252B42;">Resources</h5>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">IOS & Android</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Watch a Demo</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">Customers</div>
+          </a>
+          <a href="#" style="text-decoration: none;">
+            <div class="linka">API</div>
+          </a>
+        </div>
+        <div class="box14">
+          <h5 style="margin-top: 0; color: #252B42;">Get In Touch</h5>
+          <div class="box7" style="flex-direction: row;"><img src="img/icons/bx_bx1-phone.png" alt="image" width="20"
+              height="20">
+            <h6 style="color: #737373; margin-top: 0; margin-bottom: 0;">(480) 555-0103</h6>
+          </div>
+          <div class="box7" style="flex-direction: row;"><img src="img/icons/bx_bx-map (1).png" alt="image" width="20"
+              height="20">
+            <h6 style="color: #737373; margin-top: 0; margin-bottom: 0;">4517 Washington Ave. Manchester,
+              Kentucky 39495</h6>
+          </div>
+          <div class="box7" style="flex-direction: row;"><img src="img/icons/carbon_send-alt.png" alt="image" width="20"
+              height="20">
+            <h6 style="color: #737373; margin-top: 0; margin-bottom: 0;">debra.holt@example.com</h6>
+          </div>
+        </div>
+      </div>
+      <div class="linkbox" style="margin-bottom: 0; background: #FAFAFA;">
+        <h6 style="color: #737373;">Made With Love By Figmaland All Right Reserved </h6>
+        <div class="box7" style="width: 15%; justify-content: space-around; flex-direction: row; align-items: center;">
+          <img src="img/icons/facebook.png" width="40" height="40"><img src="img/icons/instagram.png" width="40"
+            height="40"><img src="img/icons/twitter.png" width="40" height="40">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
